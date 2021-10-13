@@ -1,28 +1,41 @@
 <div class="container-fluid" style="background-color: #000000">
     <div class="row">
-        <div class="col-md-2" style="background-color: #00FF80; text-align: center; color: #000000">
-            <p> Today's special Offers ! </p>
-        </div>
+      <div class="" style="background-color: #84C639; width: 300px; padding-left: 0px">
+        <p class="center"> Today's special Offers ! </p>
+      </div>
 
-        <div class="col-md-5">
-            <!-- Search -->
-            <div class="input-group rounded">
-                <input type="search" class="form-control rounded" placeholder="Search a product..." aria-label="Search" aria-describedby="search-addon" />
-                <span class="input-group-text border-0" id="search-addon">
-                    <i class="fas fa-search"></i>
-                </span>
+      <div class="col-md-4">
+                <!-- Search -->
+        <div class="search-container">
+          <form class="example" action="/action_page.php" style="margin:auto; max-width: 300px">
+            <input type="text" placeholder="Search a product ..." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>      
+
+      <div class="col-md-2" style="padding-top: 5px">
+        <button type="button" class="block"> View your cart 
+          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="col-md-2" style="padding-top: 10px">
+        <a href="/login-page.html">
+          <div class="dropdown">
+            <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
+            <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
+            <div class="dropdown-content">
+              <a href="#"> Login </a>
+              <a href="#"> Sign Up </a>
             </div>
-        </div>
+          </div>
+        </a>
+      </div>
 
-        <div class="col-md-3">
-            <!-- Cart -->
-            <a href=""><i class="fas fa-shopping-cart px-3 icon"></i></a>
-            <a href="/login-page.html"><i class="fas fa-user icon"></i></a>
-        </div>
-
-        <div class="col-md-2" style="background-color: #ff0000; text-align: center; color: #000000">
-            <p> Contact Us </p>
-        </div>
+      <div id="floatright" style="background-color: #ff0000; width: 150px; padding-right: 0px">
+        <p class="center"> Contact Us </p>    
+      </div>
 
     </div>
-</div>
+  </div>

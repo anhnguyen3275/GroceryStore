@@ -1,32 +1,18 @@
 /* eslint-disable no-undef */
+/*
 $(document).ready(function() {
     const $body = $('body');
-    $.get('/components/header.html', data => { $body.append(data);
+    $.get('/components/header1.html', data => { $body.append(data);
+        $body.append(data) })
+    $.get('/components/header2.html', data => { $body.append(data);
+        $body.append(data) })
+    $.get('/components/footer.html', data => { $body.append(data);
         $body.append(data) })
 });
+*/
 
+$(function() {
+    $("#header1").load("components/header1.html");
 
-var mybutton = document.getElementById("back-to-top");
+});
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() { scrollFunction() };
-
-function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener('click', topFunction)
-
-function topFunction() {
-    // document.body.scrollTop = 0;
-    // document.documentElement.scrollTop = 0;
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}

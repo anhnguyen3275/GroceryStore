@@ -1,48 +1,57 @@
-footer {
+footer{
     background-color: #404040;
-    color: #C0C0C0;
+    color: #ffffff;
 }
-
 .btn-sub {
-    color: #f1f0ed;
-    background-color: #62a85d;
+    color: #ff0000;
+    background-color: #ffffff;
     border-color: #f1f0ed;
 }
 
 .btn-sub:hover {
-    color: #212529;
-    background-color: #e2e6ea;
-    border-color: #dae0e5;
+    color: #ffffff;
+    background-color: #6a6a;
+    border-color: #6a6a;
 }
 
 .btn-sub:focus {
     box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
 }
 
-.small-lighter {
+.form-control {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.small-lighter{
     font-size: 0.9em;
     color: #e4e3e2;
 }
 
-.social-media {
+.social-media{
     font-size: 1.5rem;
 }
 
-.social-media>a {
+.social-media > a{
     margin-right: 2rem;
 }
 
-.social-media>a:hover {
+.social-media > a:hover{
     opacity: 0.8;
 }
 
-footer h5 {
+footer h5{
     margin-bottom: 1rem;
 }
 
 .back-to-top {
     position: fixed;
-    background-color: #f1f0ed;
+    background-color:#f1f0ed;
     border-color: #6a6a6a;
     bottom: 25px;
     right: 25px;
@@ -50,7 +59,7 @@ footer h5 {
 }
 
 
-/* .btn-light:focus, .btn-light.focus {
+  /* .btn-light:focus, .btn-light.focus {
   color: #212529;
   background-color: #e2e6ea;
   border-color: #dae0e5;

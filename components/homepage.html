@@ -1,257 +1,566 @@
-<div class="container-fluid">
-    <div class="row">
+<!DOCTYPE html>
+<html>
 
-        <div class="col-md-3">
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Branded Foods </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Households </a>
-            </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <title> Grocery Store </title>
+  <link rel="shortcut icon" href="./image/logostore.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/d72279f407.js" crossorigin="anonymous">
 
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="vegetables_page.html"> Veggies & Fruits </a>
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="footer.css" rel="stylesheet" type="text/css" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="header.css" rel="stylesheet" type="text/css" />
+</head>
 
-                <!--        <div class="nar-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Veggies & Fruits
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#"> Vegetables </a>
-                  <a class="dropdown-item" href="#"> Fruits </a>
-              </div>
-          </div>
-          -->
+<body>
 
-            </nav>
+  <!-- Header 1 -->
+  <!-- 
+<header>
+  <a href="#" class="todaytag"> Today's special Offers ! </a>
+  <div class="search">
+    <input type="text" placeholder="Search a product ...">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+  <button type="button" class="block"> View your cart 
+    <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+  </button>
+  <div class="login">
+    <a href="/login-page.html">
+      <div class="dropdown">
+        <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
+        <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
+        <div class="dropdown-content">
+          <a href="#"> Login </a>
+          <a href="#"> Sign Up </a>
+        </div>
+      </div>
+    </a>
+  </div>
+  <a href="#" class="contactus"> Contact Us </a>
+</header>
 
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Kitchen </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Short Codes </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Beverages </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Pet Food </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Frozen Foods </a>
-            </nav>
-            <nav class="navbar navbar-light bg-light">
-                <a class="navbar-brand" href="#"> Bread & Bakery </a>
-            </nav>
+--->
+
+  <div class="header1">
+    <div class="container-fluid" style="background-color: #000000">
+      <div class="row">
+        <div class="col-md-2 col-sm-12" style="background-color: #84C639; width: 250px; padding-left: 0px">
+          <p class="center"> Today's special Offers ! </p>
         </div>
 
-        <div class="col-md-8">
+        <div class="col-md-4 col-sm-12">
+          <!-- Search -->
+          <div class="search-container">
+            <form class="example" action="/action_page.php" style="margin:auto; max-width: 300px">
+              <input type="text" placeholder="Search a product ..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+        <div class="col-md-6 col-sm-12" style=" padding-right: 0px">
+          <div class="container">
+            <div class="row">
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="image/webbanner1.jpeg" alt="First slide">
-                        <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100 ">
-                            <h1 class="big-title"> MAKE YOUR <br> FOOD <br> WITH SPICY <br>
-                            </h1>
-                            <a href="#" class="btn btn-secondary" aria-pressed="false"> SHOP NOW </a>
-                        </div>
+
+              <div class="col-md-4 col-sm-4" style="padding-top: 5px">
+                <button type="button" class="block"> View your cart
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <div class="col-md-5 col-sm-5" style="padding-top: 10px">
+                <a href="/login-page.html">
+                  <div class="dropdown">
+                    <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
+                    <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
+                    <div class="dropdown-content">
+                      <a href="#"> Login </a>
+                      <a href="#"> Sign Up </a>
                     </div>
-
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./image/webbanner2.jpeg" alt="Second slide">
-                        <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100 c-brown">
-                            <h1 class="big-title"> MAKE YOUR <br> FOOD <br> WITH SPICY </h1>
-                            <a href="#" class="btn btn-secondary bg-brown" aria-pressed="false"> SHOP NOW </a>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="./image/webbanner3.jpeg" alt="Third slide">
-                        <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100">
-                            <div class="text-left">
-                                <h1 class="big-title"> UPTO <br> 50% <br> OFF
-                                </h1>
-                                <a href="#" class="btn btn-secondary" aria-pressed="false"> SHOP NOW </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <div class="next-button d-flex">
-                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
-                        <span class="sr-only"> Previous </span>
-                    </div>
+                  </div>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <div class="next-button d-flex">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only"> Next </span>
-                    </div>
+              </div>
+
+              <div class="col-md-3 col-sm-3" style="background-color: #ff0000;  padding-right: 0px">
+                <p class="center"> Contact Us </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--header2 bar -->
+  <div class="header2">
+    <div class="container mb-3" style="height: 120px; color: #000000; margin-top: 30px">
+      <div class="row">
+
+        <div class="col-md-2">
+          <img src="image/logostore.png" class="card-img-top" href="index.html" alt="logostore">
+        </div>
+
+        <div class="col-md-5">
+          <div class="container">
+            <div class="row" style="padding-top: 30px">
+              <div class="col-md-3">
+                <a href="" class="text-reset"> Events
                 </a>
+              </div>
+              <div class="col-md-3">
+                <a href="" class="text-reset">About Us
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="" class="text-reset"> Best Deals
+                </a>
+              </div>
+              <div class="col-md-3">
+                <a href="" class="text-reset"> Services
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2" style="padding-top: 30px">
+          <p> (+0123) 234 567 </p>
+        </div>
+
+        <div class="col-md-2" style="padding-top: 30px">
+          <a href="" alt="..."> store@grocery.com </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--Slide header -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="menupage" style="width: 20%">
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Branded Foods </a>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Households </a>
+        </nav>
+
+        <nav class="navbar">
+          <div class="dropdown">
+            <a class="navbar-brand" href="vegetables_page.html"> Veggies & Fruits
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#"> Vegetables </a>
+              <a href="#"> Fruits </a>
+            </div>
+          </div>
+        </nav>
+
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Kitchen </a>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Short Codes </a>
+        </nav>
+        <nav class="navbar">
+          <div class="dropdown">
+            <a class="navbar-brand" href="vegetables_page.html"> Beverages
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#"> Soft Drinks </a>
+              <a href="#"> Juices </a>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Pet Food </a>
+        </nav>
+        <nav class="navbar">
+          <div class="dropdown">
+            <a class="navbar-brand" href="vegetables_page.html"> Frozen Foods
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#"> Frozen Snack </a>
+              <a href="#"> Frozen Nonveg </a>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="#"> Bread & Bakery </a>
+        </nav>
+      </div>
+
+      <div class="webbanner" style="width: 80%">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="image/1.jpg" alt="First slide" style="height: 400px">
+              <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100 ">
+                <h1 class="big-title"> MAKE YOUR <br> FOOD <br> WITH SPICY <br>
+                </h1>
+                <a href="#" class="btn btn-secondary" aria-pressed="false"> SHOP NOW </a>
+              </div>
             </div>
 
+            <div class="carousel-item">
+              <img class="d-block w-100" src="image/2.jpg" alt="Second slide" style="height: 400px">
+              <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100 c-brown">
+                <h1 class="big-title"> MAKE YOUR <br> FOOD <br> WITH SPICY </h1>
+                <a href="#" class="btn btn-secondary" aria-pressed="false"> SHOP NOW </a>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="image/3.jpg" alt="Third slide" style="height: 400px">
+              <div class="carousel-caption d-flex flex-column align-items-end justify-content-center h-100">
+                <div class="text-left">
+                  <h1 class="big-title"> UPTO <br> 50% <br> OFF
+                  </h1>
+                  <a href="#" class="btn btn-secondary" aria-pressed="false"> SHOP NOW </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev " href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <div class="next-button d-flex">
+              <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+              <span class="sr-only"> Previous </span>
+            </div>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <div class="next-button d-flex">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"> Next </span>
+            </div>
+          </a>
         </div>
 
-    </div>
-</div>
+      </div>
 
-<div class="container" style="margin-top: 30px">
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-top: 30px">
     <div class="row">
-        <div class="col-md-3">
-        </div>
-        <div class="col-md-3">
-            <img src="image/DiscountOffer.jpeg" class="card-img-top" alt="...">
-        </div>
-        <div class="col-md-3">
-            <img src="image/IntroducingBestStore.jpeg" class="card-img-top" alt="...">
-        </div>
-        <div class="col-md-3">
-            <img src="image/SaveUpto$10.jpeg" class="card-img-top" alt="...">
-        </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+        <img src="image/DiscountOffer.jpeg" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-3">
+        <img src="image/IntroducingBestStore.jpeg" class="card-img-top" alt="...">
+      </div>
+      <div class="col-md-3">
+        <img src="image/SaveUpto$10.jpeg" class="card-img-top" alt="...">
+      </div>
     </div>
-</div>
+  </div>
 
-<section class="section">
+  <section class="section">
 
     <h1 style="text-align: center; color: #000000; padding-top: 70px; padding-bottom: 50px"> Hot Offers </h1>
 
     <div class="container mb-5" style="padding-bottom: 50px">
-        <div class="row">
+      <div class="row">
 
-            <div class="col-md-3">
-                <div class="card card-product" style="width: 250;">
-                    <a class="" href="">
-                        <img src="image/FortuneSunflowerOil.png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <a href="pic1.html">
-                            <h5 class="card-title"> Fortune Sunflower Oil </h5>
-                            <p class="card-text">$7.99</p>
-                        </a>
-                        <a href="#" class="btn addtoCart">Add to cart</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-3">
+          <div class="card card-product">
+            <a class="" href="">
+              <img src="image/FortuneSunflowerOil.png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <a href="pic1.html"></a>
+              <h4 class="card-title"> Fortune Sunflower Oil </h4>
+              <p class="price"> $7.99 <strike style="margin-left: 15px"> $10.00 </strike></p>
 
-            <div class="col-md-3">
-                <div class="card card-product" style="width: 250;">
-                    <a class="" href="">
-                        <img src="image/BasmatiRise(5Kg).png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <a href="pic1.html">
-                            <h5 class="card-title"> Basmati Rise (5 Kg) </h5>
-                            <p class="card-text">$11.99</p>
-                        </a>
-                        <a href="#" class="btn addtoCart">Add to cart</a>
-                    </div>
-                </div>
+              <p><button> ADD TO CART </button></p>
             </div>
-
-            <div class="col-md-3">
-                <div class="card card-product" style="width:250;">
-                    <a class="" href="">
-                        <img src="image/PepsiSoftDrink(2Ltr).png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <a href="pic2.html">
-                            <h5 class="card-title"> Pepsi Soft Drink (2 Ltr) </h5>
-                            <p class="card-text">$8.00</p>
-                        </a>
-                        <a href="#" class="btn addtoCart">Add to cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card card-product" style="width: 250">
-                    <a class="" href="">
-                        <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
-                    </a>
-                    <div class="card-body">
-                        <a href="pic3.html">
-                            <h5 class="card-title"> Dogs Food (4 Kg)</h5>
-                            <p class="card-text">$9.00</p>
-                        </a>
-                        <a href="#" class="btn addtoCart">Add to cart</a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="col-md-3">
+          <div class="card card-product">
+            <a class="" href="">
+              <img src="image/BasmatiRise(5Kg).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <a href="pic1.html"></a>
+              <h4 class="card-title"> Basmati Rice (5 Kg) </h4>
+              <p class="price"> $11.99 <strike style="margin-left: 15px"> $15.00 </strike></p>
+
+              <p><button> ADD TO CART </button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-product">
+            <a class="" href="">
+              <img src="image/PepsiSoftDrink(2Ltr).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <a href="pic2.html"></a>
+              <h4 class="card-title"> Pepsi Soft Drink (2 Ltr) </h4>
+              <p class="price"> $8.00 <strike style="margin-left: 15px"> $10.00 </strike></p>
+
+              <p><button> ADD TO CART </button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card card-product">
+            <a class="" href="">
+              <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+            </a>
+            <div class="card-body">
+              <a href="pic3.html"></a>
+              <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+              <p class="price"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+              <p><button> ADD TO CART </button></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-</section>
+  </section>
 
-<div class="">
+  <div class="top-product">
     <h1 style="color: #000000; text-align: center; padding-top: 30px; padding-bottom: 50px"> Top Products </h1>
 
     <div class="container mb-5" style="padding-bottom: 30px">
-        <div class="row" style="background-color: #E0E0E0">
-            <div class="col-md-3" style="background-color: #ffffff">
-                <nav class="navbar navbar-light bg-light">
+      <div class="row" style="background-color: #E0E0E0">
 
-                    <a class="navbar-brand-3" href="#"> ALL BRANDS </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> VEGETABLES </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> FRUITS </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> JUICES </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> PET FOOD </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> BREAD & BAKERY </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> CLEANING </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> SPICES </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> DRY FRUITS </a>
-                </nav>
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand-3" href="#"> DAILY PRODUCTS </a>
-                </nav>
-            </div>
-
-            <div class="col-md-9">
-                <div class="container" style="margin-top: 20px">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="image/8.jpg" class="card-img-top" alt="...">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="image/7.jpg" class="card-img-top" alt="...">
-                            <img src="image/10.jpg" class="card-img-top" style="margin-top: 10px" alt="...">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="image/9.jpg" class="card-img-top" alt="...">
-                            <img src="image/11.jpg" class="card-img-top" style="margin-top: 10px" alt="...">
-                        </div>
-                    </div>
-                </div>
-
-                <h4 style="margin-top: 10px; color: #000000; text-align: right"> Get <a href="" style="color: #ff0000"> 25% Off </a> On First Order And Also Get Gift Voucher </h4>
-
-                <!--
-              <img src="image/SpecialOffer.png" class="icon" alt="..." style="align: right; width: 40px ">
-              -->
-
-            </div>
+        <div class="col-md-3" style="background-color: #ffffff">
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> ALL BRANDS </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> VEGETABLES </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> FRUITS </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> JUICES </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> PET FOOD </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> BREAD & BAKERY </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> CLEANING </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> SPICES </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> DRY FRUITS </a>
+          </div>
+          <div class="wrapper">
+            <span class="icon"><i class="fa fa-check" aria-hidden="true"></i></span>
+            <a href=""> DAILY PRODUCTS </a>
+          </div>
         </div>
 
+        <div class="col-md-9">
+          <div class="container" style="margin-top: 20px">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="image/8.jpg" class="card-img-top" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image/7.jpg" class="card-img-top" alt="...">
+                <img src="image/10.jpg" class="card-img-top" style="margin-top: 10px" alt="...">
+              </div>
+              <div class="col-md-4">
+                <img src="image/9.jpg" class="card-img-top" alt="...">
+                <img src="image/11.jpg" class="card-img-top" style="margin-top: 10px" alt="...">
+              </div>
+            </div>
+          </div>
+
+          <h4 style="margin-top: 10px; color: #000000; text-align: right"> Get <a href="" style="color: #ff0000"> 25%
+              Off </a> On First Order And Also Get Gift Voucher </h4>
+
+          <!--
+            <img src="image/SpecialOffer.png" class="icon" alt="..." style="align: right; width: 40px ">
+            -->
+
+        </div>
+      </div>
+
     </div>
+
+    <div class="container-fluid" style="background-color: #ff0000">
+      <div class="row" style="padding-top: 60px; padding-bottom: 50px">
+
+        <div class="col-sm-4">
+          <h3 style="text-align: right; color: #ffffff"> Sign Up For Our Newletter </h3>
+        </div>
+
+        <div class="col-md-6">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Email">
+            <div class="input-group-prepend">
+              <button class="btn btn-sub" type="button" id="button-addon1"> SUBSCRIBE NOW </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <div class="container mb-5">
+        <div class="row" style="padding-top: 30px">
+
+          <div class="col-md-3">
+            <h5> INFORMATION </h5>
+            <ul>
+              <a href="" class="text-reset">
+                <li> Events </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> About Us </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Best Deals </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Services </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Short Codes </li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5> POLICY INFO </h5>
+            <ul>
+              <a href="" class="text-reset">
+                <li> FAQ </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Privacy Policy </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Terms Of Use </li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5> WHAT IN STORES </h5>
+            <ul>
+              <a href="" class="text-reset">
+                <li> Pet Food </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Frozen Snacks </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Kitchen </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Branded Foods </li>
+              </a>
+              <a href="" class="text-reset">
+                <li> Households </li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col-md-3">
+            <h5> TWITTER POSTS </h5>
+            <ul>
+              <i style="color: #00CC00"> 01 day ago </i>
+              <p> Non numquam <a href="" class="text-reset"> http://sd.ds/13jklf# </a> eius modi tempora incidunt ut
+                labore et <a href="" class="text-reset"> http://sd.ds/1389kjklf# </a> quo nulla. </p>
+              <i style="color: #00CC00"> 02 day ago </i>
+              <p> Con numquam <a href="" class="text-reset"> http://fd.uf/56hfg# </a> eius modi tempora incidunt ut
+                labore et <a href="" class="text-reset"> http://fd.uf/56hfg# </a> quo nulla. </p>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container" style="padding-bottom: 30px">
+        <div class="row">
+          <div class="col-md-4">
+            <p style="color: #00CC00"> 100% Secure Payments </p>
+            <img src="image/card.png" alt="...">
+          </div>
+          <div class="col-md-8">
+            <p style="color: #ffffff"> Connect With Us </p>
+            <a href="/"> <i class="fa fa-facebook" aria-hidden="true" style="font-size: 28px"></i> </a>
+            <a href="/"> <i class="fa fa-twitter" aria-hidden="true" style="font-size: 28px"></i> </a>
+            <a href="/"> <i class="fa fa-google-plus" aria-hidden="true" style="font-size: 28px"></i> </a>
+            <a href="/"> <i class="fa fa-instagram" aria-hidden="true" style="font-size: 28px"></i> </a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <a id="back-to-top" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <script src="script.js"></script>
+    <!--Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+      </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+      </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
