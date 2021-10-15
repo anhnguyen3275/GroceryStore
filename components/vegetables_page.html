@@ -2,553 +2,601 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title> Grocery Store </title>
-	<link rel="shortcut icon" href="./image/logostore.png" type="image/x-icon">
-	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/d72279f407.js" crossorigin="anonymous">
-	</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <title> Grocery Store </title>
+  <link rel="shortcut icon" href="./image/logostore.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-	 crossorigin="anonymous">
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link href="footer.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/d72279f407.js" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/css/footer.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
-  <div class="container-fluid" style="background-color: #000000">
+  <!-- Header 1 -->
+
+  <div class="header1">
+    <div class="container-fluid" style="background-color: #000000">
+      <div class="row">
+        <div class="col-md-3 col-sm-12" style="background-color: #84C639; padding-left: 0px">
+          <p class="center"> Today's special Offers ! </p>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <!-- Search -->
+          <div class="search-container">
+            <form class="example" action="/action_page.php" style="margin:auto; max-width: 300px">
+              <input type="text" placeholder="Search a product ..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-5 col-sm-12" style=" padding-right: 0px">
+          <div class="container">
+            <div class="row">
+
+
+              <div class="viewcart" style="padding-top: 5px; width: 50%">
+                <button type="button" class="block" data-toggle="modal" data-target="#cart"> View your cart
+                  <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+                </button>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"> Cart </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"> &times; </span>
+                      </button>
+                    </div>
+
+                    <div class="modal-body">
+                      <table class="show-cart table"></table>
+                    </div>
+
+                    <div class="modal-footer">
+                      <div style="padding-left: 10px"> Subtotal: $ <span class="total-cart"></span> USD </div>
+                      <button type="button" class="btn-checkout"> Check Out with </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="login" style="padding-top: 10px; width: 15%">
+                <a href="/login-page.html">
+                  <div class="dropdown">
+                    <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
+                    <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
+                    <div class="dropdown-content">
+                      <a href="#"> Login </a>
+                      <a href="#"> Sign Up </a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="contactus" style="background-color: #ff0000; width: 35%">
+                <p class="center"> Contact Us </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--header2 bar -->
+  <div class="header2">
+    <div class="container-fluid" style="color: #000000; padding-top: 30px">
+      <div class="row" style="padding-bottom: 15px">
+
+        <div class="col-md-3 col-sm-12">
+          <img src="/image/logostore.png" class="center-image" href="index.html" alt="logostore">
+        </div>
+
+        <div class="col-md-5 col-sm-12">
+          <div class="container">
+            <div class="row" style="padding-top: 20px">
+              <div class="events" style="width: 25%">
+                <a href="" class="text-reset"> Events </a>
+              </div>
+              <div class="aboutus" style="width: 25%">
+                <a href="" class="text-reset">About Us </a>
+              </div>
+              <div class="bestdeals" style="width: 25%">
+                <a href="" class="text-reset"> Best Deals </a>
+              </div>
+              <div class="services" style="width: 25%">
+                <a href="" class="text-reset"> Services </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="row" style="padding-top: 20px">
+
+            <div class="phone" style="width: 50%; text-align: center">
+              <!--        <i class="fa fa-phone" aria-hidden="true"></i> -->
+              <p> (+0123) 234 567 </p>
+            </div>
+
+            <div class="mail" style="width: 50%">
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <a href="" alt="..."> store@grocery.com </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" style="background-color: #66CC00; color: #000000; height: 60px">
     <div class="row">
-      <div class="" style="background-color: #84C639; width: 300px; padding-left: 0px">
-        <p class="center"> Today's special Offers ! </p>
+      <div class="col-md-2">
+        <a href="/homepage.html"
+          style="position: absolute; top: 0; right: 0; width: 100px; text-align:right; padding-top: 20px"> Home </a>
       </div>
-
-      <div class="col-md-4">
-                <!-- Search -->
-        <div class="search-container">
-          <form class="example" action="/action_page.php" style="margin:auto; max-width: 300px">
-            <input type="text" placeholder="Search a product ..." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-      </div>      
-
-      <div class="col-md-2" style="padding-top: 5px">
-        <button type="button" class="block"> View your cart 
-          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-        </button>
+      <div class="col-md-10" style="padding-top: 20px">
+        <p> Fruits & Vegetables </p>
       </div>
+    </div>
+  </div>
 
-      <div class="col-md-2" style="padding-top: 10px">
-        <a href="/login-page.html">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-md-2" style="padding-left: 0; padding-right: 0">
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Branded Foods </a>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Households </a>
+        </nav>
+
+        <nav class="navbar">
           <div class="dropdown">
-            <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
-            <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
-            <div class="dropdown-content">
-              <a href="#"> Login </a>
-              <a href="#"> Sign Up </a>
-            </div>
-          </div>
-        </a>
-      </div>
-
-      <div id="floatright" style="background-color: #ff0000; width: 150px; padding-right: 0px">
-        <p class="center"> Contact Us </p>    
-      </div>
-
-    </div>
-  </div>
-
-    <!--Store bar -->
-
-    <div class="container mb-3" style="height: 120px; color: #000000; margin-top: 30px">
-        <div class="row">
-
-            <div class="col-md-2">
-                <img src="image/logostore.png" class="card-img-top" alt="logostore">    
-            </div>
-            
-            <div class="col-md-5">
-              <div class="container">
-                <div class="row" style="padding-top: 30px">
-                  <div class="col-md-3">
-                    <a href="" class="text-reset"> Events
-                    </a>
-                  </div>
-                  <div class="col-md-3">
-                    <a href="" class="text-reset">About Us
-                    </a>
-                  </div>
-                  <div class="col-md-3">
-                    <a href="" class="text-reset"> Best Deals
-                    </a>
-                  </div>
-                  <div class="col-md-3">
-                    <a href="" class="text-reset"> Services
-                    </a>    
-                  </div>                 
-                </div> 
-              </div>              
-            </div>
-
-            <div class="col-md-2" style="padding-top: 30px"> 
-                    <p> (+0123) 234 567 </p>
-            </div>
-
-            <div class="col-md-2" style="padding-top: 30px"> 
-                    <a href="" alt="..."> store@grocery.com </a>
-            </div>
-
-        </div>
-      </div>
-
-<div class="container-fluid" style="background-color: #66CC00; color: #000000; height: 60px">
-  <div class="row">
-    <div class="col-md-2">
-      <a href="index.html" style="position: absolute; top: 0; right: 0; width: 100px; text-align:right; padding-top: 20px"> Home </a>
-    </div>
-    <div class="col-md-9" style="padding-top: 20px">
-      <p> Fruits & Vegetables </p>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row">
-
-    <div class="menupage" style="width: 20%">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Branded Foods </a>
-      </nav>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Households </a>
-      </nav>
-
-      <nav class="navbar">
-        <div class="dropdown">
-            <a class="navbar-brand" href="vegetables_page.html"> Veggies & Fruits 
+            <a class="navbar-brand" href="#"> Veggies & Fruits
               <i class="fa fa-caret-down" aria-hidden="true"></i>
             </a>
             <div class="dropdown-content">
-              <a href="#"> Vegetables </a>
-              <a href="#"> Fruits </a>
+              <a href="/vegetables_page.html"> Vegetables </a>
+              <a href="/vegetables_page.html"> Fruits </a>
             </div>
           </div>
-      </nav>
+        </nav>
 
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Kitchen </a>
-      </nav>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Short Codes </a>
-      </nav>
-      <nav class="navbar">
-        <div class="dropdown">
-            <a class="navbar-brand" href="vegetables_page.html"> Beverages 
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Kitchen </a>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Short Codes </a>
+        </nav>
+        <nav class="navbar">
+          <div class="dropdown">
+            <a class="navbar-brand" href="#"> Beverages
               <i class="fa fa-caret-down" aria-hidden="true"></i>
             </a>
             <div class="dropdown-content">
-              <a href="#"> Soft Drinks </a>
-              <a href="#"> Juices </a>
+              <a href="/vegetables_page.html"> Soft Drinks </a>
+              <a href="/vegetables_page.html"> Juices </a>
             </div>
           </div>
-      </nav>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Pet Food </a>
-      </nav>
-      <nav class="navbar">
-        <div class="dropdown">
-            <a class="navbar-brand" href="vegetables_page.html"> Frozen Foods
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Pet Food </a>
+        </nav>
+        <nav class="navbar">
+          <div class="dropdown">
+            <a class="navbar-brand" href="#"> Frozen Foods
               <i class="fa fa-caret-down" aria-hidden="true"></i>
             </a>
             <div class="dropdown-content">
-              <a href="#"> Frozen Snack </a>
-              <a href="#"> Frozen Nonveg </a>
+              <a href="/vegetables_page.html"> Frozen Snack </a>
+              <a href="/vegetables_page.html"> Frozen Nonveg </a>
             </div>
           </div>
-      </nav>
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"> Bread & Bakery </a>
-      </nav>
-    </div>
+        </nav>
+        <nav class="navbar">
+          <a class="navbar-brand" href="/vegetables_page.html"> Bread & Bakery </a>
+        </nav>
+      </div>
 
-    <div class="webbanner" style="width: 80%">
-      <img src="image/17.jpg" class="d-block w-100" style="height: 365px" alt="...">
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid" style="margin-top: 30px">
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-
-    <div class="col-md-3">
-      <img src="image/18.jpg" class="card-img-top" alt="...">
-      <h3 style="color: #000000; margin-top: 20px"> Fruits & Vegetables </h3>
-      <ol>
-        <li> Sunt In Culpa Qui Officia </li>
-        <li> Commodo Consequat </li>
-        <li> Sed Do Eiusmod Tempor Incididunt </li>
-      </ol>
-    </div>
-
-    <div class="col-md-3">
-      <img src="image/19.jpg" class="card-img-top" alt="...">
-      <h3 style="color: #000000; margin-top: 20px"> Dry Fruits </h3>
-      <ol>
-        <li> Enim Ipsam Voluptatem Officia </li>
-        <li> Tempora Incidunt Ut Labore Et </li>
-        <li> Vel Eum Iure Reprehenderit </li>
-      </ol>
-    </div>
-
-    <div class="col-md-3">
-      <img src="image/20.jpg" class="card-img-top" alt="...">
-      <h3 style="color: #000000; margin-top: 20px"> Vegetables </h3>
-      <ol>
-        <li> Dolorem Eum Fugiat Voluptas </li>
-        <li> Ut Aliquid Ex Ea Commodi </li>
-        <li> Magnam Aliquam Quaerat </li>
-      </ol>
-    </div>
-
-<div class="container-fluid" style="padding-bottom: 50px">
-
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-
-    <div class="col-md-9">
-      <h1 style="text-align: center; color: #000000; padding-top: 50px; padding-bottom: 50px"> Vegetables & Fruits </h1>
+      <div class="col-md-10" style="padding-left: 0; padding-right: 0">
+        <img src="/image/17.jpg" class="d-block w-100" style="height: 365px" alt="...">
+      </div>
     </div>
   </div>
+
+  <div class="container-fluid" style="margin-top: 30px">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+
+      <div class="col-md-3">
+        <img src="/image/18.jpg" class="card-product" alt="...">
+        <h3 style="color: #000000; margin-top: 20px"> Fruits & Vegetables </h3>
+        <ol>
+          <li> Sunt In Culpa Qui Officia </li>
+          <li> Commodo Consequat </li>
+          <li> Sed Do Eiusmod Tempor Incididunt </li>
+        </ol>
+      </div>
+
+      <div class="col-md-3">
+        <img src="/image/19.jpg" class="card-product" alt="...">
+        <h3 style="color: #000000; margin-top: 20px"> Dry Fruits </h3>
+        <ol>
+          <li> Enim Ipsam Voluptatem Officia </li>
+          <li> Tempora Incidunt Ut Labore Et </li>
+          <li> Vel Eum Iure Reprehenderit </li>
+        </ol>
+      </div>
+
+      <div class="col-md-3">
+        <img src="/image/20.jpg" class="card-product" alt="...">
+        <h3 style="color: #000000; margin-top: 20px"> Vegetables </h3>
+        <ol>
+          <li> Dolorem Eum Fugiat Voluptas </li>
+          <li> Ut Aliquid Ex Ea Commodi </li>
+          <li> Magnam Aliquam Quaerat </li>
+        </ol>
+      </div>
+
+      <div class="container-fluid" style="padding-bottom: 50px">
 
         <div class="row">
-          <div class="col-md-3">
-          </div>
           <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+          </div>
+
+          <div class="col-md-10">
+            <h1 style="text-align: center; color: #000000; padding-top: 50px; padding-bottom: 50px"> Fruits & Vegetables
+            </h1>
+
+            <div class="row">
+
+              <div class="col-md-3">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="/image/1.png" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> Fortune Sunflower Oil</h4>
+                    <p class="card-text"> $7.99 <strike style="margin-left: 15px"> $10.00 </strike> </p>
+                    <a href="#" data-name="FortuneSunflowerOil" data-price="7.99" class="add-to-cart btn btn-primary"> ADD TO CART</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="/image/1.png" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> Fortune Sunflower Oil</h4>
+                    <p class="card-text"> $7.99 <strike style="margin-left: 15px"> $10.00 </strike> </p>
+                    <a href="#" data-name="FortuneSunflowerOil" data-price="7.99" class="add-to-cart btn btn-primary"> ADD TO CART</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="/image/1.png" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> Fortune Sunflower Oil</h4>
+                    <p class="card-text"> $7.99 <strike style="margin-left: 15px"> $10.00 </strike> </p>
+                    <a href="#" data-name="FortuneSunflowerOil" data-price="7.99" class="add-to-cart btn btn-primary"> ADD TO CART</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top" src="/image/1.png" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title"> Fortune Sunflower Oil</h4>
+                    <p class="card-text"> $7.99 <strike style="margin-left: 15px"> $10.00 </strike> </p>
+                    <a href="#" data-name="FortuneSunflowerOil" data-price="7.99" class="add-to-cart btn btn-primary"> ADD TO CART</a>
+                  </div>
+                </div>
               </div>
+
             </div>
-          </div>
 
-        </div>
+            <div class="row">
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
 
-        <div class="row" style="padding-top: 30px">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
+
             </div>
-          </div>
 
-        </div>
+            <div class="row">
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
 
-        <div class="row" style="padding-top: 30px">
-          <div class="col-md-3">
-          </div>
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-2">
-            <div class="card card-product" style="width: 200px;">
-              <a class="" href="pic1.html">
-                <img src="image/FreshBananas(1Kg).png" class="card-img-top" alt="...">
-              </a>
-              <div class="card-body">
-                <a href="pic1.html">
-                <h5 class="card-title"> Fresh Bananas (1 Kg) </h5>
-                <p class="card-text">$10.00</p>
-                </a>
-                <a href="#" class="btn addtoCart">Add to cart</a>
+              <div class="col-md-3" style="padding-top: 10px">
+                <div class="card card-product">
+                  <a class="" href="pic1.html">
+                    <img src="image/DogsFood(4Kg).png" class="card-img-top" alt="...">
+                  </a>
+                  <div class="card-body">
+                    <h4 class="card-title"> Dogs Food (4 Kg)</h4>
+                    <p class="card-text"> $9.00 <strike style="margin-left: 15px"> $11.00 </strike></p>
+
+                    <a href="#" data-name="Dogs Food (4 Kg)" data-price="9.00" class="add-to-cart btn btn-primary"> ADD
+                      TO CART </a>
+
+                  </div>
+                </div>
               </div>
+
             </div>
+
           </div>
 
-        </div>
-      </div>
-
-  </div>
-</div>
-
-<!-- Subscribe -->
-<div class="container-fluid" style="background-color: #ff0000">
-    <div class="row" style="padding-top: 60px; padding-bottom: 50px">
-
-      <div class="col-sm-4">
-        <h5 style="text-align: right; color: #ffffff"> Sign Up For Our Newletter </h5>
-      </div>
-
-      <div class="col-md-6">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Email">
-          <div class="input-group-prepend">
-            <button class="btn btn-sub" type="button" id="button-addon1"> SUBSCRIBE NOW </button>
-          </div>
         </div>
       </div>
 
-    </div>
+      <!-- Subscribe -->
+      <div class="container-fluid" style="background-color: #ff0000">
+        <div class="row" style="padding-top: 60px; padding-bottom: 50px">
 
-</div>
+          <div class="col-sm-4">
+            <h5 style="text-align: right; color: #ffffff"> Sign Up For Our Newletter </h5>
+          </div>
 
-    <!-- Footer -->
-<footer class="container-fluid">
-    <div class="container mb-5">
-        <div class="row" style="padding-top: 30px">
+          <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Email">
+              <div class="input-group-prepend">
+                <button class="btn btn-sub" type="button" id="button-addon1"> SUBSCRIBE NOW </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer class="container-fluid">
+        <div class="container mb-5">
+          <div class="row" style="padding-top: 30px">
 
             <div class="col-md-3">
-                <h5> INFORMATION </h5>
-                    <ul>
-                        <a href="" class="text-reset">
-                            <li> Events </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> About Us </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Best Deals </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Services </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Short Codes </li>
-                        </a>                        
-                    </ul>
-            </div>
-            
-            <div class="col-md-3">               
-                    <h5> POLICY INFO </h5>
-                    <ul>
-                        <a href="" class="text-reset">
-                            <li> FAQ </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Privacy Policy </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Terms Of Use </li>
-                        </a>                       
-                    </ul>               
+              <h5> INFORMATION </h5>
+              <ul>
+                <a href="" class="text-reset">
+                  <li> Events </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> About Us </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Best Deals </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Services </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Short Codes </li>
+                </a>
+              </ul>
             </div>
 
-            <div class="col-md-3">               
-                    <h5> WHAT IN STORES </h5>
-                    <ul>
-                        <a href="" class="text-reset">
-                            <li> Pet Food </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Frozen Snacks </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Kitchen </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Branded Foods </li>
-                        </a>
-                        <a href="" class="text-reset">
-                            <li> Households </li>
-                        </a>                        
-                    </ul>               
+            <div class="col-md-3">
+              <h5> POLICY INFO </h5>
+              <ul>
+                <a href="" class="text-reset">
+                  <li> FAQ </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Privacy Policy </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Terms Of Use </li>
+                </a>
+              </ul>
             </div>
 
-            <div class="col-md-3">               
-                    <h5> TWITTER POSTS </h5>
-                    <ul>
-                      <i style="color: #00CC00"> 01 day ago </i>
-                      <p> Non numquam <a href="" class="text-reset">  http://sd.ds/13jklf# </a> eius modi tempora incidunt ut labore et <a href="" class="text-reset"> http://sd.ds/1389kjklf# </a> quo nulla. </p>
-                      <i style="color: #00CC00"> 02 day ago </i>
-                      <p> Con numquam <a href="" class="text-reset"> http://fd.uf/56hfg# </a> eius modi tempora incidunt ut labore et <a href="" class="text-reset"> http://fd.uf/56hfg# </a> quo nulla. </p>
-                    </ul>               
+            <div class="col-md-3">
+              <h5> WHAT IN STORES </h5>
+              <ul>
+                <a href="" class="text-reset">
+                  <li> Pet Food </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Frozen Snacks </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Kitchen </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Branded Foods </li>
+                </a>
+                <a href="" class="text-reset">
+                  <li> Households </li>
+                </a>
+              </ul>
             </div>
 
+            <div class="col-md-3">
+              <h5> TWITTER POSTS </h5>
+              <ul>
+                <i style="color: #00CC00"> 01 day ago </i>
+                <p> Non numquam <a href="" class="text-reset"> http://sd.ds/13jklf# </a> eius modi tempora incidunt ut
+                  labore et <a href="" class="text-reset"> http://sd.ds/1389kjklf# </a> quo nulla. </p>
+                <i style="color: #00CC00"> 02 day ago </i>
+                <p> Con numquam <a href="" class="text-reset"> http://fd.uf/56hfg# </a> eius modi tempora incidunt ut
+                  labore
+                  et <a href="" class="text-reset"> http://fd.uf/56hfg# </a> quo nulla. </p>
+              </ul>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-<div class="container" style="padding-bottom: 30px">
-  <div class="row">
-    <div class="col-md-4">
-        <p style="color: #00CC00"> 100% Secure Payments </p>
-        <img src="image/card.png" alt="...">
-    </div>
-    <div class="col-md-8">
-      <p style="color: #ffffff"> Connect With Us </p>
-      <a href="/"> <i class="fa fa-facebook" aria-hidden="true" style="font-size: 28px"></i> </a>
-      <a href="/"> <i class="fa fa-twitter" aria-hidden="true" style="font-size: 28px"></i> </a>
-      <a href="/"> <i class="fa fa-google-plus" aria-hidden="true" style="font-size: 28px"></i> </a>
-      <a href="/"> <i class="fa fa-instagram" aria-hidden="true" style="font-size: 28px"></i> </a>
-    </div>
-  </div>
-</div>
+        <div class="container" style="padding-bottom: 30px">
+          <div class="row">
+            <div class="col-md-4">
+              <p style="color: #00CC00"> 100% Secure Payments </p>
+              <img src="image/card.png" alt="...">
+            </div>
+            <div class="col-md-8">
+              <p style="color: #ffffff"> Connect With Us </p>
+              <a href="/"> <i class="fa fa-facebook" aria-hidden="true" style="font-size: 28px"></i> </a>
+              <a href="/"> <i class="fa fa-twitter" aria-hidden="true" style="font-size: 28px"></i> </a>
+              <a href="/"> <i class="fa fa-google-plus" aria-hidden="true" style="font-size: 28px"></i> </a>
+              <a href="/"> <i class="fa fa-instagram" aria-hidden="true" style="font-size: 28px"></i> </a>
+            </div>
+          </div>
+        </div>
 
-</footer>
+      </footer>
 
-    <a id="back-to-top" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+      <a id="back-to-top" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
-    <script src="script.js"></script>
-    <!--Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      <script src="script.js"></script>
+      <!--Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
         </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 

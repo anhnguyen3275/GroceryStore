@@ -1,4 +1,5 @@
 /* eslint-disable no-undef */
+
 /*
 $(document).ready(function() {
     const $body = $('body');
@@ -11,8 +12,11 @@ $(document).ready(function() {
 });
 */
 
-$(function() {
-    $("#header1").load("components/header1.html");
+$.get('header1.html', {}, function(response) { 
+    $('div#header1').append(response);
+  });
 
-});
+  $.get('footer.html', {}, function(response) { 
+    $('div#footer').append(response);
+  });
 

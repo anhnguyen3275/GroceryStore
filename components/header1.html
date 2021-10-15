@@ -1,41 +1,79 @@
-<div class="container-fluid" style="background-color: #000000">
+<!-- Header 1-->
+<div class="header1">
+  <div class="container-fluid" style="background-color: #000000">
     <div class="row">
-      <div class="" style="background-color: #84C639; width: 300px; padding-left: 0px">
+      <div class="col-md-3 col-sm-12" style="background-color: #84C639; padding-left: 0px">
         <p class="center"> Today's special Offers ! </p>
       </div>
 
-      <div class="col-md-4">
-                <!-- Search -->
+      <div class="col-md-4 col-sm-12">
+        <!-- Search -->
         <div class="search-container">
           <form class="example" action="/action_page.php" style="margin:auto; max-width: 300px">
             <input type="text" placeholder="Search a product ..." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
-      </div>      
-
-      <div class="col-md-2" style="padding-top: 5px">
-        <button type="button" class="block"> View your cart 
-          <i class="fas fa-shopping-cart" aria-hidden="true"></i>
-        </button>
       </div>
 
-      <div class="col-md-2" style="padding-top: 10px">
-        <a href="/login-page.html">
-          <div class="dropdown">
-            <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
-            <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
-            <div class="dropdown-content">
-              <a href="#"> Login </a>
-              <a href="#"> Sign Up </a>
+      <div class="col-md-5 col-sm-12" style=" padding-right: 0px">
+        <div class="container">
+          <div class="row">
+
+
+            <div class="viewcart" style="padding-top: 5px; width: 50%">
+              <button type="button" class="block" data-toggle="modal" data-target="#cart"> View your cart
+                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+              </button>
             </div>
-          </div>
-        </a>
-      </div>
 
-      <div id="floatright" style="background-color: #ff0000; width: 150px; padding-right: 0px">
-        <p class="center"> Contact Us </p>    
+            <!-- Modal -->
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Cart </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true"> &times; </span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <table class="show-cart table"></table>
+                  </div>
+
+                  <div class="modal-footer">
+                    <div style="padding-left: 10px"> Subtotal: $ <span class="total-cart"></span> USD </div>
+                    <button type="button" class="btn-checkout"> Check Out with </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="login" style="padding-top: 10px; width: 15%">
+              <a href="/login-page.html">
+                <div class="dropdown">
+                  <i class="fa fa-user" aria-hidden="true" style="color: #fff"></i>
+                  <i class="fa fa-caret-down" aria-hidden="true" style="color: #fff"></i>
+                  <div class="dropdown-content">
+                    <a href="#"> Login </a>
+                    <a href="#"> Sign Up </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="contactus" style="background-color: #ff0000; width: 35%">
+              <p class="center"> Contact Us </p>
+            </div>
+
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
+</div>
