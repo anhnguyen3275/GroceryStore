@@ -90,6 +90,7 @@ padding-top: 14px;
 .card {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 max-width: 285px;
+height: 370px;
 margin: auto;
 text-align: center;
 font-family: arial;
@@ -97,7 +98,7 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 width: 50%;
-border: 10px solid #e8ecf0;
+border: 10px solid #f4f6f8;
 outline: 1px solid #e8ecf0;
 }
 

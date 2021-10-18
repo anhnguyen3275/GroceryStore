@@ -12,11 +12,14 @@ $(document).ready(function() {
 });
 */
 
-$.get('header1.html', {}, function(response) { 
+$.get('/components/header1.html', {}, function (response) {
     $('div#header1').append(response);
-  });
+});
 
-  $.get('footer.html', {}, function(response) { 
+$.get('/components/header2.html', {}, function (response) {
+    $('div#header2').append(response);
+});
+
+$.get('/components/footer.html', {}, function (response) {
     $('div#footer').append(response);
-  });
-
+});
