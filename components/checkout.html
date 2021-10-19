@@ -82,7 +82,9 @@
 
                     <div class="modal-footer">
                       <div style="padding-left: 10px"> Subtotal: $ <span class="total-cart"></span> USD </div>
-                      <button type="button" class="btn-checkout"> Check Out with </button>
+                      <a href="/components/checkout.html">
+                        <button type="button" class="btn-checkout"> Check Out with </button>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -188,236 +190,211 @@
         </nav>
       </div>
 
-      <div class="col-md-10" style="padding-left: 0; padding-right: 0">
-        <h1> Checkout</h1>
-        <img src="/image/17.jpg" class="d-block w-100" style="height: 320px" alt="...">
-      </div>
-    </div>
-  </div>
+      <div class="col-md-10" style="padding-left: 40px; padding-right: 40px">
+        <h1 style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: #000000"> Checkout</h1>
+        <h4 style="color: #000000"> YOUR SHOPPING CART CONTAINS: 3 PRODUCTS </h4>
 
-  <div class="container-fluid" style="margin-top: 30px">
-    <div class="row">
-      <div class="col-md-3">
-      </div>
-
-      <div class="col-md-3">
-        <img src="/image/18.jpg" class="card-product" alt="...">
-        <h3 style="color: #000000; margin-top: 20px"> Fruits & Vegetables </h3>
-        <ol>
-          <li> Sunt In Culpa Qui Officia </li>
-          <li> Commodo Consequat </li>
-          <li> Sed Do Eiusmod Tempor Incididunt </li>
-        </ol>
-      </div>
-
-      <div class="col-md-3">
-        <img src="/image/19.jpg" class="card-product" alt="...">
-        <h3 style="color: #000000; margin-top: 20px"> Dry Fruits </h3>
-        <ol>
-          <li> Enim Ipsam Voluptatem Officia </li>
-          <li> Tempora Incidunt Ut Labore Et </li>
-          <li> Vel Eum Iure Reprehenderit </li>
-        </ol>
-      </div>
-
-      <div class="col-md-3">
-        <img src="/image/20.jpg" class="card-product" alt="...">
-        <h3 style="color: #000000; margin-top: 20px"> Vegetables </h3>
-        <ol>
-          <li> Dolorem Eum Fugiat Voluptas </li>
-          <li> Ut Aliquid Ex Ea Commodi </li>
-          <li> Magnam Aliquam Quaerat </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid" style="padding-bottom: 50px">
-
-    <div class="row">
-      <div class="col-md-2">
-      </div>
-
-      <div class="col-md-10">
-        <h1 style="text-align: center; color: #000000; padding-top: 50px; padding-bottom: 50px"> Fruits & Vegetables
-        </h1>
-
-        <div class="row">
-
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/29.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Bananas (1 Kg) </h4>
-                <p class="card-text"> $10.00 <strike style="margin-left: 15px"> $12.00 </strike> </p>
-                <a href="#" data-name="FreshBananas" data-price="10.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
+        <div class="container-fluid" style="padding-top: 30px">
+          <div class="row" style="background-color: #000; color: #fff; padding-top: 10px">
+            <div class="col-md-1">
+              <p> SL No. </p>
+            </div>
+            <div class="col-md-3">
+              <p> Product </p>
+            </div>
+            <div class="col-md-3">
+              <p> Quality </p>
+            </div>
+            <div class="col-md-3">
+              <p> Product Name </p>
+            </div>
+            <div class="col-md-1">
+              <p> Price </p>
+            </div>
+            <div class="col-md-1">
+              <p> Remove </p>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
+          <div class="row" style="color: #000; padding-top: 10px; background-color: #E0E0E0;">
+            <div class="col-md-1">
+              <p> 1 </p>
+            </div>
+            <div class="col-md-2">
               <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/30.png" alt="Card image cap">
+                <img src="/image/1.png" alt="Card image cap" style="width: 60px;">
               </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Cauliflower (2 No's) </h4>
-                <p class="card-text"> $5.00 <strike style="margin-left: 15px"> $8.00 </strike> </p>
-                <a href="#" data-name="FreshCauliflower" data-price="5.00" class="add-to-cart btn btn-primary"> ADD
-                  TO CART</a>
-              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="minusplus">
+                <input type="button" value="-" class="minus">
+                <input type="number" value="1" class="numberPlace">
+                <input type="button" value="+" class="plus">
+             </div>
+            </div>
+            <div class="col-md-3">
+              <p> Fortune Sunflower Oil </p>
+            </div>
+            <div class="col-md-1">
+              <p> $290.00 </p>
+            </div>
+            <div class="col-md-1">
+              <i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="padding-left: 10px; "></i>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
+          <div class="row" style="color: #000; background-color: #E0E0E0; padding-top: 10px">
+            <div class="col-md-1">
+              <p> 2 </p>
+            </div>
+            <div class="col-md-2">
               <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/31.png" alt="Card image cap">
+                <img src="/image/3.png" alt="Card image cap" style="width: 60px;">
               </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Brinjal Bharta (1 Kg) </h4>
-                <p class="card-text"> $2.00 <strike style="margin-left: 15px"> $3.00 </strike> </p>
-                <a href="#" data-name="FreshBrinjalBharta" data-price="2.00" class="add-to-cart btn btn-primary">
-                  ADD TO CART</a>
-              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="minusplus">
+                <input type="button" value="-" class="minus">
+                <input type="number" value="1" class="numberPlace">
+                <input type="button" value="+" class="plus">
+             </div>
+            </div>
+            <div class="col-md-3">
+              <p> Basmati Rise (5 Kg) </p>
+            </div>
+            <div class="col-md-1">
+              <p> $250.00 </p>
+            </div>
+            <div class="col-md-1">
+              <i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="padding-left: 10px; "></i>
             </div>
           </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
+          <div class="row" style="color: #000; background-color: #E0E0E0; padding-top: 10px">
+            <div class="col-md-1">
+              <p> 3 </p>
+            </div>
+            <div class="col-md-2">
               <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/32.png" alt="Card image cap">
+                <img src="/image/2.png" alt="Card image cap" style="width: 60px;">
               </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Sweet Line (500 Gm)</h4>
-                <p class="card-text"> $6.00 <strike style="margin-left: 15px"> $7.00 </strike> </p>
-                <a href="#" data-name="FreshSweetLine" data-price="6.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="minusplus">
+                <input type="button" value="-" class="minus">
+                <input type="number" value="1" class="numberPlace">
+                <input type="button" value="+" class="plus">
+             </div>
+            </div>
+            <div class="col-md-3">
+              <p> Pepsi Soft Drink (2 Ltr) </p>
+            </div>
+            <div class="col-md-1">
+              <p> $15.00 </p>
+            </div>
+            <div class="col-md-1">
+              <i class="fa fa-times-circle-o fa-2x" aria-hidden="true" style="padding-left: 10px; "></i>
             </div>
           </div>
 
         </div>
 
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/9.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Spinach (Palak) </h4>
-                <p class="card-text"> $2.00 <strike style="margin-left: 15px"> $3.00 </strike> </p>
-                <a href="#" data-name="FreshSpinachPalak" data-price="2.00" class="add-to-cart btn btn-primary"> ADD
-                  TO CART</a>
+        <div class="container-fluid" style="padding-top: 20px">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="col-md-12" style="background-color: #66CC00; color: #fff; text-align: center; height: 50px; font-size: 20px">
+                <p style="padding-top: 9px"> CONTINUE TO BASKET </p>
               </div>
-            </div>
-          </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/10.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Mango Dasheri (1 Kg) </h4>
-                <p class="card-text"> $5.00 <strike style="margin-left: 15px"> $8.00 </strike> </p>
-                <a href="#" data-name="FreshMangoDasheri" data-price="5.00" class="add-to-cart btn btn-primary"> ADD
-                  TO CART</a>
+              <div class="container- fluid">
+                <div class="row" style="padding-top: 10px">
+                  <div class="col-md-8">
+                    <p> Product1 - </p>
+                  </div>
+                  <div class="col-md-4" style="text-align: right">
+                    <p> $15.00 </p>
+                  </div>
+                </div>
+                <div class="row" style="padding-top: 10px">
+                  <div class="col-md-8">
+                    <p> Product2 - </p>
+                  </div>
+                  <div class="col-md-4" style="text-align: right">
+                    <p> $25.00 </p>
+                  </div>
+                </div>
+                <div class="row" style="padding-top: 10px">
+                  <div class="col-md-8">
+                    <p> Product3 - </p>
+                  </div>
+                  <div class="col-md-4" style="text-align: right">
+                    <p> $29.00 </p>
+                  </div>
+                </div>
+                <div class="row" style="padding-top: 10px">
+                  <div class="col-md-8">
+                    <p> Total Service Charges - </p>
+                  </div>
+                  <div class="col-md-4" style="text-align: right">
+                    <p> $15.00 </p>
+                  </div>
+                </div>
+                <div class="row" style="padding-top: 30px">
+                  <div class="col-md-8">
+                    <p style="font-size: 20px; color: #000"><strong> Total - </strong></p>
+                  </div>
+                  <div class="col-md-4" style="text-align: right">
+                    <p style="font-size: 20px; color: #000"><strong> $84.00 </strong></p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/11.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Apple Red (1 Kg) </h4>
-                <p class="card-text"> $6.00 <strike style="margin-left: 15px"> $8.00 </strike> </p>
-                <a href="#" data-name="FreshAppleRed" data-price="6.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
-            </div>
-          </div>
+            <div class="col-md-8">
+              <h4 style="color: #000"> ADD A NEW DETAILS </h4>
+              <form>
+                <div class="form-group">
+                  <label for="fullname"> Full name: </label>
+                  <input type="fullname" class="form-control" id="fullname" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="mobilenumber"> Mobile number: </label>
+                  <input type="mobilenumber" class="form-control" id="mobilenumber">
+                </div>
+                <div class="form-group">
+                  <label for="landmark"> Landmark: </label>
+                  <input type="landmark" class="form-control" id="landmark">
+                </div>
+                <div class="form-group">
+                  <label for="towncity"> Town/City: </label>
+                  <input type="towncity" class="form-control" id="towncity">
+                </div>
+                <div class="form-group">
+                  <label for="addresstype"> Address type: </label>
+                  <select class="form-control" id="addresstype">
+                    <option> Office </option>
+                    <option> Home </option>
+                    <option> Commercial </option>
+                  </select>
+                </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/12.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Broccoli (500 Gm) </h4>
-                <p class="card-text"> $4.00 <strike style="margin-left: 15px"> $6.00 </strike> </p>
-                <a href="#" data-name="FreshBroccoli" data-price="4.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
-            </div>
-          </div>
-        </div>
+                <div class="col-md-12">
+                  <button type="checkout" class="btn btn-primary"> DELIVERY TO THIS ADDRESS </button>
+                </div>
 
-        <div class="row" style="padding-top: 40px;">
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/33.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Basket Onion (1 Kg) </h4>
-                <p class="card-text"> $5.00 <strike style="margin-left: 15px"> $7.00 </strike> </p>
-                <a href="#" data-name="FreshBasketOnion" data-price="5.00" class="add-to-cart btn btn-primary"> ADD
-                  TO CART</a>
-              </div>
-            </div>
-          </div>
+                <div class="col-md-12" style="padding-top: 50px; padding-bottom: 80px;">
+                  <button type="checkout" class="btn-payment" style="float: right" > Make a payment 
+                    <i class="fa fa-chevron-right" aria-hidden="true" style="padding-left: 10px"></i>
+                  </button>
+                </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/34.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Muskmelon (1 Kg) </h4>
-                <p class="card-text"> $4.00 <strike style="margin-left: 15px"> $5.00 </strike> </p>
-                <a href="#" data-name="FreshMuskmelon" data-price="4.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
-            </div>
-          </div>
+              </form>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/35.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Mushroom (500 Ml) </h4>
-                <p class="card-text"> $11.00 <strike style="margin-left: 15px"> $15.00 </strike> </p>
-                <a href="#" data-name="Freshmushroom" data-price="11.00" class="add-to-cart btn btn-primary"> ADD TO
-                  CART</a>
-              </div>
             </div>
-          </div>
 
-          <div class="col-md-3">
-            <div class="card" style="width: 20rem;">
-              <a href="/components/pic1.html">
-                <img class="card-img-top" src="/image/36.png" alt="Card image cap">
-              </a>
-              <div class="card-block">
-                <h4 class="card-title"> Fresh Strawberry (1 Pc) </h4>
-                <p class="card-text"> $7.00 <strike style="margin-left: 15px"> $9.00 </strike> </p>
-                <a href="#" data-name="FreshSttrawberry" data-price="7.00" class="add-to-cart btn btn-primary"> ADD
-                  TO CART</a>
-              </div>
-            </div>
           </div>
         </div>
-
+        
       </div>
 
     </div>

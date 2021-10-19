@@ -23,3 +23,30 @@ function topFunction() {
     });
 }
 
+$(document).on('click', '.plus', function () {
+    $(this).prev().val(+$(this).prev().val() + 1);
+ });
+ $(document).on('click', '.minus', function () {
+    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+ });
+
+ window.onload=function(){
+    var minusBtn = document.getElementById("minus"),
+        plusBtn = document.getElementById("plus"),
+        numberPlace = document.getElementById("numberPlace"),
+        min = 1; /// min number
+        
+    minusBtn.onclick = function(){
+        if (number>min){
+           number = number-1; /// Minus 1 of the number
+           numberPlace.innerText = number ; /// Display the value in place of the number           
+        }
+        if(number == min) {        
+            numberPlace.style.color= "red";
+            setTimeout(function(){numberPlace.style.color= "black"},500)
+        }
+        else {
+          numberPlace.style.color="black";            
+           }                
+    }
+}
